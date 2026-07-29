@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SEO Audit | Toronto Wiring</title>
+<style>
+  :root {
+    --ink:   #14181f;
+    --body:  #2c3441;
+    --muted: #5b6472;
+    --line:  #e3e7ec;
+    --navy:  #1e2a44;
+    --accent:#2563a8;
+    --red:   #d64545;
+    --amber: #e3a008;
+    --green: #2f9e5f;
+    --page:  #eef1f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 30px 16px; background: var(--page); color: var(--body);
+         font: 14.5px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .sheet { max-width: 1140px; margin: 0 auto 24px; background: #fff; border-radius: 8px;
+           padding: 38px 42px;
+           box-shadow: 0 1px 2px rgba(20,24,31,.06), 0 10px 30px rgba(20,24,31,.07); }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+  h1 { font-size: 27px; margin: 0 0 3px; letter-spacing: -.3px; color: var(--ink); }
+  .client { font-size: 18px; font-weight: 700; color: var(--accent); margin: 0; }
+  .sub { font-size: 12px; color: var(--muted); margin: 3px 0 0; }
+  .byline { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+            font-size: 11px; color: var(--muted); letter-spacing: .3px; text-transform: uppercase;
+            margin: 10px 0 26px; }
+
+  .cols { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); gap: 40px; }
+  h2 { font-size: 15.5px; margin: 24px 0 10px; color: var(--ink); letter-spacing: -.1px; }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 11px; }
+  .lede { font-size: 14.5px; color: var(--ink); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 6px; }
+  th { background: var(--navy); color: #fff; text-align: left; font-weight: 600;
+       padding: 8px 11px; font-size: 12px; }
+  td { padding: 8px 11px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #f7f9fb; }
+  .snapshot td:first-child { font-weight: 600; width: 42%; }
+  .plan td:first-child { font-weight: 600; white-space: nowrap; width: 27%; }
+  .work { table-layout: fixed; }
+  .work ul { margin: 0; padding-left: 16px; }
+  .work li { margin-bottom: 4px; }
+
+  .findings td { padding: 11px 11px 11px 0; }
+  .findings td.area { width: 32%; font-weight: 700; padding-left: 18px; position: relative;
+                      color: var(--ink); }
+  .dot { position: absolute; left: 0; top: 16px; width: 8px; height: 8px; border-radius: 50%; }
+  .red .dot { background: var(--red); }
+  .amber .dot { background: var(--amber); }
+  .green .dot { background: var(--green); }
+
+  .thumb { margin: 0 0 18px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+  .thumb img { display: block; width: 100%; max-height: 190px; object-fit: cover;
+               object-position: top; }
+  .thumb figcaption { font-size: 10.5px; color: var(--muted); padding: 6px 9px;
+                      background: #f7f9fb; border-top: 1px solid var(--line); }
+
+  .close { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .cta { margin-top: 22px; background: #f4f7fa; border-left: 3px solid var(--accent);
+         padding: 14px 16px; border-radius: 0 5px 5px 0; font-size: 13.5px; }
+  .cta a { color: var(--accent); font-weight: 600; }
+  footer { max-width: 1140px; margin: 0 auto; padding-bottom: 26px; text-align: center;
+           color: var(--muted); font-size: 11px; }
+
+  @media (max-width: 900px) {
+    body { padding: 12px 8px; }
+    .sheet { padding: 22px 18px; }
+    .cols { grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  /* Two pages of A4. A document, not a deck. */
+  @page { size: A4 portrait; margin: 12mm 12mm; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 9.6pt; line-height: 1.45; }
+    .sheet { box-shadow: none; border-radius: 0; padding: 0; margin: 0; max-width: none; }
+    .cols { gap: 22px; }
+    h1 { font-size: 19pt; } h2 { font-size: 11pt; margin: 15px 0 7px; }
+    table { font-size: 8.8pt; } th, td { padding: 5px 8px; }
+    .thumb img { max-height: 42mm; }
+    tr, .findings tr, .cta, .thumb { break-inside: avoid; }
+    h2 { break-after: avoid; }
+    footer { padding: 8px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="masthead">
+    <h1>SEO Audit</h1>
+    <p class="client">Toronto Wiring</p>
+    <p class="sub">torontowiring.com</p>
+  </div>
+  <div class="byline">
+    <span>Prepared by Roham Ghiasi | SEO and Search Visibility</span>
+    <span>29 July 2026</span>
+  </div>
+
+  <div class="cols">
+    <div>
+
+      <h2>Where the site stands right now</h2>
+      <table class="snapshot">
+        <tbody>
+          <tr><td>Website</td><td>torontowiring.com, built on WordPress</td></tr>
+          <tr><td>Pages we checked</td><td>12 pages and 60 links</td></tr>
+          <tr><td>Pages Google knows about</td><td>No list has ever been given to Google, it finds pages on its own</td></tr>
+          <tr><td>Words on your homepage</td><td>1,786, plenty of real content to work with</td></tr>
+          <tr><td>Site security</td><td>Locked, the padlock is there and everything loads safely</td></tr>
+          <tr><td>Overall health</td><td>Solid bones, but the machinery that feeds Google needs real work</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What's holding the site back</h2>
+      <table class="findings">
+        <thead><tr><th>Area</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>How Google finds your pages</td>
+            <td>Google was never handed a list of your pages, so it wanders the site and hopes it finds everything. On top of that, your homepage never tells Google which version of itself is the official one, so the page you care about most can end up competing against copies of itself. Both fixes are quick, and both are foundational to everything else.</td>
+          </tr>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Buttons that send customers away</td>
+            <td>Twelve of your main buttons send visitors off to places like Facebook instead of to your own pages, which is a customer walking out the door right before they call. Another four links point to pages that no longer exist, twenty more, including your Service Areas menu link, do nothing when clicked, and two pages share the same name so Google cannot tell them apart. We checked 60 links across 12 pages to confirm all of this.</td>
+          </tr>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Your star rating in Google</td>
+            <td>The site is currently telling Google its own star rating, and Google treats self-reported ratings as against the rules. The usual penalty is losing the stars beside your name in search results, one of the few things that makes a listing stand out. Removing the self-reported rating protects the stars you have actually earned.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>An old door left open</td>
+            <td>The login page for the back of your website is open to the public and can show up in Google under your own business name. That looks unfinished to a customer and invites break-in attempts from everyone else. It should be closed off from search.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Speed on a phone</td>
+            <td>Most people who need an electrician are searching from a phone, and nine of your photos are heavier than they need to be, which slows the site down for exactly those people. Three photos also carry no written description, which is how Google understands what a picture shows. The good news is the page itself answered quickly when we tested it, so lighter photos would make a fast site genuinely fast.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Telling Google where you are</td>
+            <td>Your site never states your name, address and phone number in the format Google reads by machine, and there is no map on the site, both standard signals for a business that wins work by neighbourhood. Oddly, the one machine-readable label the site does carry tells Google the page is about a book, not an electrical contractor. For a local trade, this is the cheapest credibility there is.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Site security</td>
+            <td>The padlock is in place and everything on the site loads securely. Visitors and Google both see a safe site. Nothing to do here.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Page names and previews</td>
+            <td>Your pages are named properly for search, the homepage has a clean summary ready for Google to show, and links shared on social media preview correctly. These basics are done right, which is more than most local sites manage.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Homepage copy</td>
+            <td>Your homepage carries 1,786 words of real, readable content that Google can see, which is a genuine asset most electricians never build. Adding a short question-and-answer section would give Google even more of your page to show searchers. Once the issues above are fixed, this copy can start pulling its full weight.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p class="lede">Google is guessing its way around your site because nobody ever handed it a list of your pages, and guessing costs you calls.</p>
+
+      <h2>The fix, in priority order</h2>
+      <table class="plan">
+        <thead><tr><th>When</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td>Week 1</td><td>Hand Google a proper list of your pages, end the homepage guessing game, and remove the self-reported star rating before it costs you your stars.</td></tr>
+          <tr><td>Weeks 1-2</td><td>Point your main buttons at your own pages instead of Facebook, fix the broken and dead links, and close the public login page.</td></tr>
+          <tr><td>Weeks 2-4</td><td>Lighten the photos so the site is quick on a phone, and put your name, address and a map on the site in the format Google reads.</td></tr>
+          <tr><td>Month 2+</td><td>Build on the strong homepage copy for the services and neighbourhoods you most want to win, and keep everything monitored so it stays fixed.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What clean SEO is worth</h2>
+      <p>When someone in Toronto needs an electrician, they are usually standing there with their phone, they search, and they call whoever looks credible near the top. Right now Google is working from an incomplete picture of your site, and some of the visitors you do win are being handed to Facebook by your own buttons. Fixing this does not need new content or a redesign, the 1,786 words on your homepage are already there. It means the site you have already paid for finally sends the calls to you instead of leaking them.</p>
+
+      <h2>The work to be carried out</h2>
+      <table class="work">
+        <thead><tr><th>What we handle</th><th>What we need from you</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><ul><li>Give Google a complete, current list of your pages and keep it updated</li><li>Fix every broken, dead and off-site link so clicks land on your pages</li><li>Remove the risky self-reported star rating and replace it with signals Google accepts</li><li>Close the public login page off from search</li><li>Lighten and label your photos so the site is fast on a phone</li><li>Put your address and a map on the site the way Google expects from a local business</li></ul></td>
+            <td><ul><li>A WordPress login so we can make the fixes directly</li><li>Your confirmed business address and the one phone number you want everywhere</li><li>The services and neighbourhoods you most want the phone ringing for</li><li>Access to your Google Business Profile, if you have one set up</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="close">
+        <h2>Why this matters</h2>
+        <p>A lot here is already right. The site is secure, the pages are named properly, shared links look good, and the homepage carries more real content than most electricians in the city ever bother to write. What is broken is the machinery around it. Google was never given a map of the site, your own buttons send customers away, and the self-reported star rating puts your stars at risk. Tighten those things and this stops being a site that just sits there and becomes the thing that makes the phone ring.</p>
+      </div>
+
+      <div class="cta">
+        Happy to walk you through any of this, no pitch.
+<br>Or reply to <a href="mailto:rohamghiasicw@gmail.com">rohamghiasicw@gmail.com</a>      </div>
+    </div>
+  </div>
+</div>
+
+<footer>RG Marketing | Audit run 29 July 2026 against torontowiring.com | Findings are measured, not estimated.</footer>
+
+</body>
+</html>
