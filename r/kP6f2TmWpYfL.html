@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SEO Audit | North Toronto Movers</title>
+<style>
+  :root {
+    --ink:   #14181f;
+    --body:  #2c3441;
+    --muted: #5b6472;
+    --line:  #e3e7ec;
+    --navy:  #1e2a44;
+    --accent:#2563a8;
+    --red:   #d64545;
+    --amber: #e3a008;
+    --green: #2f9e5f;
+    --page:  #eef1f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 30px 16px; background: var(--page); color: var(--body);
+         font: 14.5px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .sheet { max-width: 1140px; margin: 0 auto 24px; background: #fff; border-radius: 8px;
+           padding: 38px 42px;
+           box-shadow: 0 1px 2px rgba(20,24,31,.06), 0 10px 30px rgba(20,24,31,.07); }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+  h1 { font-size: 27px; margin: 0 0 3px; letter-spacing: -.3px; color: var(--ink); }
+  .client { font-size: 18px; font-weight: 700; color: var(--accent); margin: 0; }
+  .sub { font-size: 12px; color: var(--muted); margin: 3px 0 0; }
+  .byline { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+            font-size: 11px; color: var(--muted); letter-spacing: .3px; text-transform: uppercase;
+            margin: 10px 0 26px; }
+
+  .cols { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); gap: 40px; }
+  h2 { font-size: 15.5px; margin: 24px 0 10px; color: var(--ink); letter-spacing: -.1px; }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 11px; }
+  .lede { font-size: 14.5px; color: var(--ink); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 6px; }
+  th { background: var(--navy); color: #fff; text-align: left; font-weight: 600;
+       padding: 8px 11px; font-size: 12px; }
+  td { padding: 8px 11px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #f7f9fb; }
+  .snapshot td:first-child { font-weight: 600; width: 42%; }
+  .plan td:first-child { font-weight: 600; white-space: nowrap; width: 27%; }
+  .work { table-layout: fixed; }
+  .work ul { margin: 0; padding-left: 16px; }
+  .work li { margin-bottom: 4px; }
+
+  .findings td { padding: 11px 11px 11px 0; }
+  .findings td.area { width: 32%; font-weight: 700; padding-left: 18px; position: relative;
+                      color: var(--ink); }
+  .dot { position: absolute; left: 0; top: 16px; width: 8px; height: 8px; border-radius: 50%; }
+  .red .dot { background: var(--red); }
+  .amber .dot { background: var(--amber); }
+  .green .dot { background: var(--green); }
+
+  .thumb { margin: 0 0 18px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+  .thumb img { display: block; width: 100%; max-height: 190px; object-fit: cover;
+               object-position: top; }
+  .thumb figcaption { font-size: 10.5px; color: var(--muted); padding: 6px 9px;
+                      background: #f7f9fb; border-top: 1px solid var(--line); }
+
+  .close { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .cta { margin-top: 22px; background: #f4f7fa; border-left: 3px solid var(--accent);
+         padding: 14px 16px; border-radius: 0 5px 5px 0; font-size: 13.5px; }
+  .cta a { color: var(--accent); font-weight: 600; }
+  footer { max-width: 1140px; margin: 0 auto; padding-bottom: 26px; text-align: center;
+           color: var(--muted); font-size: 11px; }
+
+  @media (max-width: 900px) {
+    body { padding: 12px 8px; }
+    .sheet { padding: 22px 18px; }
+    .cols { grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  /* Two pages of A4. A document, not a deck. */
+  @page { size: A4 portrait; margin: 12mm 12mm; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 9.6pt; line-height: 1.45; }
+    .sheet { box-shadow: none; border-radius: 0; padding: 0; margin: 0; max-width: none; }
+    .cols { gap: 22px; }
+    h1 { font-size: 19pt; } h2 { font-size: 11pt; margin: 15px 0 7px; }
+    table { font-size: 8.8pt; } th, td { padding: 5px 8px; }
+    .thumb img { max-height: 42mm; }
+    tr, .findings tr, .cta, .thumb { break-inside: avoid; }
+    h2 { break-after: avoid; }
+    footer { padding: 8px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="masthead">
+    <h1>SEO Audit</h1>
+    <p class="client">North Toronto Movers</p>
+    <p class="sub">www.northtorontomovers.ca</p>
+  </div>
+  <div class="byline">
+    <span>Prepared by Roham Ghiasi | SEO and Search Visibility</span>
+    <span>29 July 2026</span>
+  </div>
+
+  <div class="cols">
+    <div>
+
+      <h2>Where the site stands right now</h2>
+      <table class="snapshot">
+        <tbody>
+          <tr><td>Pages we walked through</td><td>12</td></tr>
+          <tr><td>Pages Google has been handed</td><td>42</td></tr>
+          <tr><td>Words on your homepage</td><td>1,073</td></tr>
+          <tr><td>Secure connection</td><td>Yes, with one loose end</td></tr>
+          <tr><td>Built on</td><td>WordPress</td></tr>
+          <tr><td>Overall health</td><td>Solid bones, held back by dead links and a few loose ends</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What's holding the site back</h2>
+      <table class="findings">
+        <thead><tr><th>Area</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Buttons and links that go nowhere</td>
+            <td>A customer who taps your email address or your street address gets nothing, and that is someone ready to reach you walking away. It also makes the site read as unfinished, to visitors and to Google. We found 20 links like this, including the menu, the services link, your email, and your Redpath Ave address.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Which homepage Google trusts</td>
+            <td>Google has to guess which version of your homepage is the real one, so the page you care about most can compete against copies of itself. The list of pages you hand Google is in place, 42 pages on it, but the homepage is missing the small marker that says this is the one that counts.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Old admin door left open</td>
+            <td>Your admin login page is open to the public and can show up in Google under your own name. That looks sloppy to anyone who stumbles on it and invites strangers to poke at it. It should be shut.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>One unsecured loose end</td>
+            <td>The site runs on a secure connection, but one small piece still loads the old, unsecured way. It undercuts the padlock you already paid for, and it is a quick fix. We found exactly one item doing this.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Photos and phone speed</td>
+            <td>Your photos are heavier than they need to be, which slows the site on a phone, and most people looking for a mover are standing on their phone when they search. Fourteen images are in older, bulkier formats, and 3 of 26 have no written description for Google to read. The good news is the page itself answered fast when we tested it.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>How you show up in search results</td>
+            <td>This part is done right. Your page title says exactly what you do and where, the text under it in Google is the right length, and links shared to social media show a proper preview. Nothing to fix here.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Homepage content</td>
+            <td>Your homepage has real substance, over a thousand words Google can actually read, and your business details are labelled behind the scenes so Google knows who you are and where you work. One easy add later, a question and answer section, which is the cheapest way to take up more room in search results.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Trust signals</td>
+            <td>The things that make a visitor feel safe booking you are in place. Keep them there.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Your Google profile</td>
+            <td>Your website and your Google business profile tell the same story, which is exactly what Google wants to see from a local company. No action needed.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p class="lede">Twenty of your links, including your own email address and street address, go nowhere when clicked, and that is the biggest thing standing between a visitor and a booking.</p>
+
+      <h2>The fix, in priority order</h2>
+      <table class="plan">
+        <thead><tr><th>When</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td>Week 1</td><td>Every link on the site goes somewhere, so a visitor who taps your email or your address actually reaches you.</td></tr>
+          <tr><td>Weeks 1-2</td><td>The open admin page gets shut and Google is told exactly which homepage is the real one.</td></tr>
+          <tr><td>Weeks 2-4</td><td>Photos get lightened and the last unsecured piece gets fixed, so the site feels fast on a phone.</td></tr>
+          <tr><td>Month 2+</td><td>A question and answer section goes up so you take more space in the results when people search for a mover.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What clean SEO is worth</h2>
+      <p>When someone in North Toronto needs a mover, they search on their phone, pick the company that looks most put together, and try to make contact right then. Your site does the hard part already, it reads well and looks credible, then the email and address links fail at the exact moment someone tries to reach you. Fixing the links means people already on your site can actually contact you, and the cleanup behind the scenes helps Google send more of them. For a moving company, one saved enquiry is a whole household&#39;s job.</p>
+
+      <h2>The work to be carried out</h2>
+      <table class="work">
+        <thead><tr><th>What we handle</th><th>What we need from you</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><ul><li>Repair all 20 dead links so every button goes where it should</li><li>Shut the public admin login page</li><li>Tell Google which version of your homepage is the real one</li><li>Lighten your photos so the site is fast on phones</li><li>Fix the one piece still loading over an unsecure connection</li><li>Build the question and answer section for extra room in search results</li></ul></td>
+            <td><ul><li>A login to your WordPress dashboard</li><li>The services and neighbourhoods you most want to be found for</li><li>Which types of moves make you the most money, so we prioritize those</li><li>A quick yes on the fix list before we start</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="close">
+        <h2>Why this matters</h2>
+        <p>There is a lot here already working in your favour. The homepage has real content, your search listing is set up properly, your trust signals are in place, and your site and Google profile agree with each other, which many local companies never get right. What is holding it back is mechanical, links that go nowhere, an old door left open, photos heavier than they need to be. None of it is a rebuild, all of it is fixable in weeks. Tighten those and this becomes a site that not only shows up but actually converts the people who land on it.</p>
+      </div>
+
+      <div class="cta">
+        Happy to walk you through any of this, no pitch.
+<br>Or reply to <a href="mailto:rohamghiasicw@gmail.com">rohamghiasicw@gmail.com</a>      </div>
+    </div>
+  </div>
+</div>
+
+<footer>RG Marketing | Audit run 29 July 2026 against www.northtorontomovers.ca | Findings are measured, not estimated.</footer>
+
+</body>
+</html>
