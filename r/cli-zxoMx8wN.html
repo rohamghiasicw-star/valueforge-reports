@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SEO Audit | Toronto Wiring</title>
+<style>
+  :root {
+    --ink:   #14181f;
+    --body:  #2c3441;
+    --muted: #5b6472;
+    --line:  #e3e7ec;
+    --navy:  #1e2a44;
+    --accent:#2563a8;
+    --red:   #d64545;
+    --amber: #e3a008;
+    --green: #2f9e5f;
+    --page:  #eef1f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 30px 16px; background: var(--page); color: var(--body);
+         font: 14.5px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .sheet { max-width: 1140px; margin: 0 auto 24px; background: #fff; border-radius: 8px;
+           padding: 38px 42px;
+           box-shadow: 0 1px 2px rgba(20,24,31,.06), 0 10px 30px rgba(20,24,31,.07); }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+  h1 { font-size: 27px; margin: 0 0 3px; letter-spacing: -.3px; color: var(--ink); }
+  .client { font-size: 18px; font-weight: 700; color: var(--accent); margin: 0; }
+  .sub { font-size: 12px; color: var(--muted); margin: 3px 0 0; }
+  .byline { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+            font-size: 11px; color: var(--muted); letter-spacing: .3px; text-transform: uppercase;
+            margin: 10px 0 26px; }
+
+  .cols { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); gap: 40px; }
+  h2 { font-size: 15.5px; margin: 24px 0 10px; color: var(--ink); letter-spacing: -.1px; }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 11px; }
+  .lede { font-size: 14.5px; color: var(--ink); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 6px; }
+  th { background: var(--navy); color: #fff; text-align: left; font-weight: 600;
+       padding: 8px 11px; font-size: 12px; }
+  td { padding: 8px 11px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #f7f9fb; }
+  .snapshot td:first-child { font-weight: 600; width: 42%; }
+  .plan td:first-child { font-weight: 600; white-space: nowrap; width: 27%; }
+  .work { table-layout: fixed; }
+  .work ul { margin: 0; padding-left: 16px; }
+  .work li { margin-bottom: 4px; }
+
+  .findings td { padding: 11px 11px 11px 0; }
+  .findings td.area { width: 32%; font-weight: 700; padding-left: 18px; position: relative;
+                      color: var(--ink); }
+  .dot { position: absolute; left: 0; top: 16px; width: 8px; height: 8px; border-radius: 50%; }
+  .red .dot { background: var(--red); }
+  .amber .dot { background: var(--amber); }
+  .green .dot { background: var(--green); }
+
+  .thumb { margin: 0 0 18px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+  .thumb img { display: block; width: 100%; max-height: 190px; object-fit: cover;
+               object-position: top; }
+  .thumb figcaption { font-size: 10.5px; color: var(--muted); padding: 6px 9px;
+                      background: #f7f9fb; border-top: 1px solid var(--line); }
+
+  .close { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .cta { margin-top: 22px; background: #f4f7fa; border-left: 3px solid var(--accent);
+         padding: 14px 16px; border-radius: 0 5px 5px 0; font-size: 13.5px; }
+  .cta a { color: var(--accent); font-weight: 600; }
+  footer { max-width: 1140px; margin: 0 auto; padding-bottom: 26px; text-align: center;
+           color: var(--muted); font-size: 11px; }
+
+  @media (max-width: 900px) {
+    body { padding: 12px 8px; }
+    .sheet { padding: 22px 18px; }
+    .cols { grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  /* Two pages of A4. A document, not a deck. */
+  @page { size: A4 portrait; margin: 12mm 12mm; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 9.6pt; line-height: 1.45; }
+    .sheet { box-shadow: none; border-radius: 0; padding: 0; margin: 0; max-width: none; }
+    .cols { gap: 22px; }
+    h1 { font-size: 19pt; } h2 { font-size: 11pt; margin: 15px 0 7px; }
+    table { font-size: 8.8pt; } th, td { padding: 5px 8px; }
+    .thumb img { max-height: 42mm; }
+    tr, .findings tr, .cta, .thumb { break-inside: avoid; }
+    h2 { break-after: avoid; }
+    footer { padding: 8px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="masthead">
+    <h1>SEO Audit</h1>
+    <p class="client">Toronto Wiring</p>
+    <p class="sub">torontowiring.com</p>
+  </div>
+  <div class="byline">
+    <span>Prepared by Roham Ghiasi | SEO and Search Visibility</span>
+    <span>29 July 2026</span>
+  </div>
+
+  <div class="cols">
+    <div>
+
+      <h2>Where the site stands right now</h2>
+      <table class="snapshot">
+        <tbody>
+          <tr><td>Website</td><td>https://torontowiring.com</td></tr>
+          <tr><td>Business</td><td>Toronto Wiring</td></tr>
+          <tr><td>Platform</td><td>WordPress 6.7.5</td></tr>
+          <tr><td>Primary language</td><td>en-US</td></tr>
+          <tr><td>Indexation</td><td>No sitemap found, no canonical tags</td></tr>
+          <tr><td>Overall SEO health</td><td>Strong content, six fixable leaks</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What's holding the site back</h2>
+      <table class="findings">
+        <thead><tr><th>Area</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>No clear index control</td>
+            <td>There is no XML sitemap at /sitemap.xml or /sitemap_index.xml and none referenced in robots.txt, and the homepage carries no canonical tag. A sitemap is how you tell Google which pages exist and matter, and canonicals are how you tell it which version of each page to rank. Without either, Google decides your indexation on its own, and it does not always decide in your favour.</td>
+          </tr>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Broken and placeholder links</td>
+            <td>Of 61 links checked across 12 pages, 4 return errors or never resolve, including the Ontario home electrical safety page (404), and 20 more point nowhere at all, placeholder &#39;#&#39; links behind &#39;Menu&#39;, &#39;Service Areas&#39;, &#39;Search&#39; and &#39;Back to top&#39;, which read as an unfinished site to visitors and to Google. On top of that, 12 main calls to action send clicks straight off-site, for example to facebook.com/TorontoWiring, leaking link authority away from the service pages you want ranking. One title tag is also duplicated across pages, which blurs which page should rank for which search.</td>
+          </tr>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Review and trust signals</td>
+            <td>The site marks up its own star rating in schema. Self-serving review markup is against Google&#39;s structured data policy, and the penalty when it is caught is losing rich results sitewide, exactly the stars that make a local electrician stand out on the results page. Better to remove it on your own terms than have it pulled.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Exposed login path</td>
+            <td>/wp-login.php is live and returning a 200 to anyone who asks, crawlers included. Search engines can index it alongside your real pages, and an openly exposed WordPress login is also a standing invitation to automated break-in attempts. It should be hidden or locked down.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Images and speed</td>
+            <td>9 images are served as PNG with no WebP versions, and 3 of 19 images have no alt text, which is a missed relevance signal and an accessibility gap. Converting those PNGs to compressed WebP is a direct mobile load-speed win, and speed is both a ranking and a conversion factor for someone searching for an electrician from their phone. The base is quick, the homepage HTML is 175 KB and responded in 293 ms, so this is polish rather than surgery.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Local schema and map signals</td>
+            <td>There is no LocalBusiness or Organization schema anywhere on the site, so it never states your name, address and phone in a machine-readable way, and there is no Google map embed. Both are standard signals Google uses to tie a website to a place and a Business Profile. For a business that wants to own electrician etobicoke, that connection is the whole game.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>HTTPS and redirects</td>
+            <td>HTTPS is enforced and every asset loads securely. That is a trust and ranking box already ticked, nothing to do here.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Title and meta in place</td>
+            <td>The title tag is present and well sized, &#34;Toronto Wiring-Electrician in Toronto-Electrical Contractor&#34;, the meta description is the right length, and Open Graph tags are set so shared links preview correctly. The on-page basics have been done properly.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Structure and content</td>
+            <td>The homepage carries 1,786 words of crawlable copy, more than most trade sites manage, which gives Google real text to rank. Two easy upgrades sit here: the only schema type found is Book, which tells Google nothing about an electrical contractor, and there is no FAQPage schema, the cheapest way to pick up extra SERP real estate.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p class="lede">Google has no map of torontowiring.com, no sitemap and no canonical tags, so it is guessing which pages should rank for electrician etobicoke.</p>
+
+      <h2>The fix, in priority order</h2>
+      <table class="plan">
+        <thead><tr><th>When</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td>Week 1</td><td>Generate and submit an XML sitemap, set canonical tags sitewide, and strip the self-serving review markup before Google pulls your rich results. Lock down /wp-login.php so it stops answering with a 200. Stop the leaks first.</td></tr>
+          <tr><td>Weeks 1-2</td><td>Fix or remove the 4 broken outbound links, wire the 20 placeholder &#39;#&#39; links to real pages, repoint the 12 off-site calls to action at your own service pages, and rewrite the duplicated title tag so every page targets its own search.</td></tr>
+          <tr><td>Weeks 2-4</td><td>Convert the 9 PNGs to compressed WebP, add alt text to the 3 images missing it, add LocalBusiness schema stating your name, address and phone, embed a Google map, and replace the stray Book schema with markup that actually describes an electrical contractor.</td></tr>
+          <tr><td>Month 2+</td><td>Build out service and area pages around electrician etobicoke, add FAQPage schema to pick up extra SERP real estate, tighten internal linking so authority flows to the pages that convert, and keep the sitemap current as new pages go live.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What clean SEO is worth</h2>
+      <p>When someone in Etobicoke has a dead outlet or a panel that needs upgrading, they search once, call whoever looks credible near the top, and stop looking. Right now Google has no sitemap to find your pages, no canonicals to trust them, and your strongest buttons push visitors to Facebook instead of your own services. Fixing that puts the 1,786 words of real content you already wrote in front of the people typing electrician etobicoke. The work is already on the page, it just is not being counted.</p>
+
+      <h2>The work to be carried out</h2>
+      <table class="work">
+        <thead><tr><th>What we handle</th><th>What we need from you</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><ul><li>Sitemap, canonical tags and Search Console setup</li><li>Cleaning up the broken and placeholder links and repointing your calls to action</li><li>Removing the review markup and adding LocalBusiness and FAQ schema</li><li>WebP conversion and alt text across the image set</li><li>Locking down the exposed login path</li><li>Monitoring indexation so fixes actually stick</li></ul></td>
+            <td><ul><li>WordPress admin access</li><li>Google Search Console and Business Profile access</li><li>Confirmation of the correct phone number and address, we found two number strings on the site</li><li>Your priority services and the areas you most want work from</li><li>Any photos of real jobs you want featured</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="close">
+        <h2>Why this matters</h2>
+        <p>There is real substance here. The homepage carries more genuine content than most contractor sites, HTTPS is done right, and the title and meta basics are in place, which is further than many competitors get. But Google cannot reward what it cannot reliably crawl, and right now it has no sitemap, no canonicals, and a trail of broken and placeholder links telling it the site is unfinished. None of this is a rebuild, it is cleanup and wiring, done once and paying every month after. Tightened up, this becomes a site that competes for electrician etobicoke instead of just existing.</p>
+      </div>
+
+      <div class="cta">
+        Happy to walk you through any of this, no pitch.
+<br>Or reply to <a href="mailto:rohamghiasicw@gmail.com">rohamghiasicw@gmail.com</a>      </div>
+    </div>
+  </div>
+</div>
+
+<footer>RG Marketing | Audit run 29 July 2026 against torontowiring.com | Findings are measured, not estimated.</footer>
+
+</body>
+</html>
