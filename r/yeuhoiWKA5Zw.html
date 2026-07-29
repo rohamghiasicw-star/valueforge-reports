@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SEO Audit | Power Blitz Electrical Ltd.</title>
+<style>
+  :root {
+    --ink:   #14181f;
+    --body:  #2c3441;
+    --muted: #5b6472;
+    --line:  #e3e7ec;
+    --navy:  #1e2a44;
+    --accent:#2563a8;
+    --red:   #d64545;
+    --amber: #e3a008;
+    --green: #2f9e5f;
+    --page:  #eef1f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 30px 16px; background: var(--page); color: var(--body);
+         font: 14.5px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .sheet { max-width: 1140px; margin: 0 auto 24px; background: #fff; border-radius: 8px;
+           padding: 38px 42px;
+           box-shadow: 0 1px 2px rgba(20,24,31,.06), 0 10px 30px rgba(20,24,31,.07); }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+  h1 { font-size: 27px; margin: 0 0 3px; letter-spacing: -.3px; color: var(--ink); }
+  .client { font-size: 18px; font-weight: 700; color: var(--accent); margin: 0; }
+  .sub { font-size: 12px; color: var(--muted); margin: 3px 0 0; }
+  .byline { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+            font-size: 11px; color: var(--muted); letter-spacing: .3px; text-transform: uppercase;
+            margin: 10px 0 26px; }
+
+  .cols { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); gap: 40px; }
+  h2 { font-size: 15.5px; margin: 24px 0 10px; color: var(--ink); letter-spacing: -.1px; }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 11px; }
+  .lede { font-size: 14.5px; color: var(--ink); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 6px; }
+  th { background: var(--navy); color: #fff; text-align: left; font-weight: 600;
+       padding: 8px 11px; font-size: 12px; }
+  td { padding: 8px 11px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #f7f9fb; }
+  .snapshot td:first-child { font-weight: 600; width: 42%; }
+  .plan td:first-child { font-weight: 600; white-space: nowrap; width: 27%; }
+  .work { table-layout: fixed; }
+  .work ul { margin: 0; padding-left: 16px; }
+  .work li { margin-bottom: 4px; }
+
+  .findings td { padding: 11px 11px 11px 0; }
+  .findings td.area { width: 32%; font-weight: 700; padding-left: 18px; position: relative;
+                      color: var(--ink); }
+  .dot { position: absolute; left: 0; top: 16px; width: 8px; height: 8px; border-radius: 50%; }
+  .red .dot { background: var(--red); }
+  .amber .dot { background: var(--amber); }
+  .green .dot { background: var(--green); }
+
+  .thumb { margin: 0 0 18px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+  .thumb img { display: block; width: 100%; max-height: 190px; object-fit: cover;
+               object-position: top; }
+  .thumb figcaption { font-size: 10.5px; color: var(--muted); padding: 6px 9px;
+                      background: #f7f9fb; border-top: 1px solid var(--line); }
+
+  .close { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .cta { margin-top: 22px; background: #f4f7fa; border-left: 3px solid var(--accent);
+         padding: 14px 16px; border-radius: 0 5px 5px 0; font-size: 13.5px; }
+  .cta a { color: var(--accent); font-weight: 600; }
+  footer { max-width: 1140px; margin: 0 auto; padding-bottom: 26px; text-align: center;
+           color: var(--muted); font-size: 11px; }
+
+  @media (max-width: 900px) {
+    body { padding: 12px 8px; }
+    .sheet { padding: 22px 18px; }
+    .cols { grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  /* Two pages of A4. A document, not a deck. */
+  @page { size: A4 portrait; margin: 12mm 12mm; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 9.6pt; line-height: 1.45; }
+    .sheet { box-shadow: none; border-radius: 0; padding: 0; margin: 0; max-width: none; }
+    .cols { gap: 22px; }
+    h1 { font-size: 19pt; } h2 { font-size: 11pt; margin: 15px 0 7px; }
+    table { font-size: 8.8pt; } th, td { padding: 5px 8px; }
+    .thumb img { max-height: 42mm; }
+    tr, .findings tr, .cta, .thumb { break-inside: avoid; }
+    h2 { break-after: avoid; }
+    footer { padding: 8px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="masthead">
+    <h1>SEO Audit</h1>
+    <p class="client">Power Blitz Electrical Ltd.</p>
+    <p class="sub">powerblitz.ca | Electrician</p>
+  </div>
+  <div class="byline">
+    <span>Prepared by Roham Ghiasi | SEO and Search Visibility</span>
+    <span>29 July 2026</span>
+  </div>
+
+  <div class="cols">
+    <div>
+
+      <h2>Where the site stands right now</h2>
+      <table class="snapshot">
+        <tbody>
+          <tr><td>Website</td><td>https://powerblitz.ca/</td></tr>
+          <tr><td>Business</td><td>Power Blitz Electrical Ltd.</td></tr>
+          <tr><td>Platform</td><td>WordPress 6.8.6</td></tr>
+          <tr><td>Primary language</td><td>en-US</td></tr>
+          <tr><td>Indexation</td><td>Sitemap lists 91 URLs, no canonical tag on the homepage</td></tr>
+          <tr><td>Overall SEO health</td><td>Strong base, two urgent local leaks</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What's holding the site back</h2>
+      <table class="findings">
+        <thead><tr><th>Area</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Links and internal linking</td>
+            <td>Ten internal links return errors, including the pages at /electrician-markham/, /electrician-richmond-hill/ and /electrician-brampton/, all 404s, which means Google has nothing to rank for those cities. Another 20 links point nowhere, href=&#39;#&#39; placeholders on items like Services and Features, and 10 main calls to action send clicks off-site, for example to Facebook, which leaks link authority away from the pages you want ranking. On top of that one crawled page has no H1 and one title tag is duplicated, so a few pages are competing with or undercutting each other.</td>
+          </tr>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Google profile alignment</td>
+            <td>Your Google profile lists 416 797 4084, but the site shows 1 855 608 0178 and 1 855 923 5004. Mismatched name, address and phone data is one of the most common causes of a stalled map pack ranking, because Google can&#39;t confirm the listing and the website are the same business. There&#39;s also no Google map embed on the site, a standard local relevance signal that&#39;s easy to add.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Index control</td>
+            <td>A sitemap exists at /sitemaps.xml listing 91 URLs, which is good. But the homepage has no canonical tag, so if URL variants of it exist Google can index more than one version and split ranking signals between them. One tag fixes it.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Error pages and dead URLs</td>
+            <td>The WordPress login page at /wp-login.php returns a 200 and is reachable by crawlers. An indexable login page burns crawl budget on a URL that will never earn you a customer, and it advertises your admin door to automated attack scripts. It should be blocked from crawling and locked down.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>On-page basics</td>
+            <td>Your homepage title reads &#34;Top-Rated Ontario Electrical Services: Power Blitz Experts&#34; and contains neither electrician nor North York, the exact words the searches you want are built around. The title tag is the strongest on-page relevance signal a page has, so right now your best page isn&#39;t raising its hand for your best keyword. The meta description is present at the right length and Open Graph tags are set, so shared links preview correctly.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Images and speed</td>
+            <td>18 images are served as PNG with no WebP versions, and converting them is a direct mobile load speed win, which feeds both rankings and conversions. The homepage HTML transfers 244 KB and responded in 929 ms, so there&#39;s room to tighten. Two of 34 images are missing alt text, small but easy relevance and accessibility points left on the table.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>HTTPS and redirects</td>
+            <td>HTTPS is enforced sitewide and assets load securely. That&#39;s a baseline trust signal for both Google and visitors, and it&#39;s done right.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Review and trust signals</td>
+            <td>Trust signals are in place on the site. That supports conversion once the local visibility issues above are fixed, so the traffic you win actually turns into calls.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Structure and content</td>
+            <td>The homepage carries 1047 words of crawlable copy, and Electrician, FAQPage, Organization and WebSite schema are all present. That structured data tells Google exactly what kind of business this is, and most trade sites never get this far. The foundation is genuinely good.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p class="lede">The pages that should win you Markham, Richmond Hill and Brampton searches return 404s, and your Google profile phone number doesn&#39;t match your site, which is exactly what stalls a map pack ranking.</p>
+
+      <h2>The fix, in priority order</h2>
+      <table class="plan">
+        <thead><tr><th>When</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td>Week 1</td><td>Rebuild or 301 the 404&#39;d Markham, Richmond Hill and Brampton pages, align the Google profile phone number with the site so NAP data matches everywhere, and embed a Google map. Stop the local bleed first.</td></tr>
+          <tr><td>Weeks 1-2</td><td>Set a canonical tag on the homepage, rewrite the title tag around electrician North York, resolve the duplicated title, add the missing H1, and block and secure /wp-login.php so crawlers stop wasting budget on it.</td></tr>
+          <tr><td>Weeks 2-4</td><td>Convert the 18 PNG images to WebP, add the two missing alt texts, repair or remove the 20 placeholder links, and reroute the 10 off-site calls to action to your own service pages so link authority stays where it earns rankings.</td></tr>
+          <tr><td>Month 2+</td><td>Reconcile the 91-URL sitemap against what actually resolves, build deliberate internal links between city and service pages, and keep titles, schema and the Google profile aligned as new pages go live.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What clean SEO is worth</h2>
+      <p>When someone in North York needs an electrician, they search, scan the map pack, and call from whatever page Google shows them. Right now Google is being told two different phone numbers for your business, so it hesitates to show you there at all. And when it looks for your page about Markham, Richmond Hill or Brampton, it finds a 404. Fixing the profile mismatch and rebuilding those city pages puts you in front of the exact searches that turn into service calls, with the 1047 words of homepage copy and the Electrician schema you already have doing the supporting work.</p>
+
+      <h2>The work to be carried out</h2>
+      <table class="work">
+        <thead><tr><th>What we handle</th><th>What we need from you</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><ul><li>Rebuild the broken city pages and fix every dead link</li><li>Align your Google profile and website phone numbers</li><li>Rewrite titles and set canonicals around the searches you want</li><li>Convert images to WebP and tighten load speed</li><li>Reroute calls to action so link authority stays on your pages</li><li>Lock down and de-index the exposed login page</li></ul></td>
+            <td><ul><li>WordPress admin access</li><li>Access to your Google Business Profile</li><li>The one phone number you want used everywhere</li><li>The cities you want ranked first, whether that&#39;s Markham, Richmond Hill, Brampton or others</li><li>Any keywords you already care about beyond electrician North York</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="close">
+        <h2>Why this matters</h2>
+        <p>There&#39;s real strength here. HTTPS is enforced, the homepage carries 1047 words of crawlable copy, Electrician and FAQPage schema are in place, and your trust signals are set. That&#39;s more than most trade sites ever get right. But the pages meant to win you nearby cities return 404s, your Google profile phone doesn&#39;t match your site, and your homepage title doesn&#39;t name the search you actually want. Tighten those and this stops being a site Google half trusts and becomes the one it sends North York electrical searches to.</p>
+      </div>
+
+      <div class="cta">
+        Happy to walk you through any of this, no pitch.
+<br>Or reply to <a href="mailto:rohamghiasicw@gmail.com">rohamghiasicw@gmail.com</a>      </div>
+    </div>
+  </div>
+</div>
+
+<footer>RG Marketing | Audit run 29 July 2026 against powerblitz.ca | Findings are measured, not estimated.</footer>
+
+</body>
+</html>
