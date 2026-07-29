@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SEO Audit | Integrity Plumbing</title>
+<style>
+  :root {
+    --ink:   #14181f;
+    --body:  #2c3441;
+    --muted: #5b6472;
+    --line:  #e3e7ec;
+    --navy:  #1e2a44;
+    --accent:#2563a8;
+    --red:   #d64545;
+    --amber: #e3a008;
+    --green: #2f9e5f;
+    --page:  #eef1f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 30px 16px; background: var(--page); color: var(--body);
+         font: 14.5px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .sheet { max-width: 1140px; margin: 0 auto 24px; background: #fff; border-radius: 8px;
+           padding: 38px 42px;
+           box-shadow: 0 1px 2px rgba(20,24,31,.06), 0 10px 30px rgba(20,24,31,.07); }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+  h1 { font-size: 27px; margin: 0 0 3px; letter-spacing: -.3px; color: var(--ink); }
+  .client { font-size: 18px; font-weight: 700; color: var(--accent); margin: 0; }
+  .sub { font-size: 12px; color: var(--muted); margin: 3px 0 0; }
+  .byline { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+            font-size: 11px; color: var(--muted); letter-spacing: .3px; text-transform: uppercase;
+            margin: 10px 0 26px; }
+
+  .cols { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); gap: 40px; }
+  h2 { font-size: 15.5px; margin: 24px 0 10px; color: var(--ink); letter-spacing: -.1px; }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 11px; }
+  .lede { font-size: 14.5px; color: var(--ink); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 6px; }
+  th { background: var(--navy); color: #fff; text-align: left; font-weight: 600;
+       padding: 8px 11px; font-size: 12px; }
+  td { padding: 8px 11px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #f7f9fb; }
+  .snapshot td:first-child { font-weight: 600; width: 42%; }
+  .plan td:first-child { font-weight: 600; white-space: nowrap; width: 27%; }
+  .work { table-layout: fixed; }
+  .work ul { margin: 0; padding-left: 16px; }
+  .work li { margin-bottom: 4px; }
+
+  .findings td { padding: 11px 11px 11px 0; }
+  .findings td.area { width: 32%; font-weight: 700; padding-left: 18px; position: relative;
+                      color: var(--ink); }
+  .dot { position: absolute; left: 0; top: 16px; width: 8px; height: 8px; border-radius: 50%; }
+  .red .dot { background: var(--red); }
+  .amber .dot { background: var(--amber); }
+  .green .dot { background: var(--green); }
+
+  .thumb { margin: 0 0 18px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+  .thumb img { display: block; width: 100%; max-height: 190px; object-fit: cover;
+               object-position: top; }
+  .thumb figcaption { font-size: 10.5px; color: var(--muted); padding: 6px 9px;
+                      background: #f7f9fb; border-top: 1px solid var(--line); }
+
+  .close { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .cta { margin-top: 22px; background: #f4f7fa; border-left: 3px solid var(--accent);
+         padding: 14px 16px; border-radius: 0 5px 5px 0; font-size: 13.5px; }
+  .cta a { color: var(--accent); font-weight: 600; }
+  footer { max-width: 1140px; margin: 0 auto; padding-bottom: 26px; text-align: center;
+           color: var(--muted); font-size: 11px; }
+
+  @media (max-width: 900px) {
+    body { padding: 12px 8px; }
+    .sheet { padding: 22px 18px; }
+    .cols { grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  /* Two pages of A4. A document, not a deck. */
+  @page { size: A4 portrait; margin: 12mm 12mm; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 9.6pt; line-height: 1.45; }
+    .sheet { box-shadow: none; border-radius: 0; padding: 0; margin: 0; max-width: none; }
+    .cols { gap: 22px; }
+    h1 { font-size: 19pt; } h2 { font-size: 11pt; margin: 15px 0 7px; }
+    table { font-size: 8.8pt; } th, td { padding: 5px 8px; }
+    .thumb img { max-height: 42mm; }
+    tr, .findings tr, .cta, .thumb { break-inside: avoid; }
+    h2 { break-after: avoid; }
+    footer { padding: 8px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="masthead">
+    <h1>SEO Audit</h1>
+    <p class="client">Integrity Plumbing</p>
+    <p class="sub">integrityplumbingyyc.ca</p>
+  </div>
+  <div class="byline">
+    <span>Prepared by Roham Ghiasi | SEO and Search Visibility</span>
+    <span>29 July 2026</span>
+  </div>
+
+  <div class="cols">
+    <div>
+
+      <h2>Where the site stands right now</h2>
+      <table class="snapshot">
+        <tbody>
+          <tr><td>Website</td><td>integrityplumbingyyc.ca</td></tr>
+          <tr><td>Built on</td><td>WordPress</td></tr>
+          <tr><td>Pages Google knows about</td><td>22 listed, 12 checked on this pass</td></tr>
+          <tr><td>Words on your homepage</td><td>800, a healthy amount</td></tr>
+          <tr><td>Site security</td><td>Locked and enforced, done right</td></tr>
+          <tr><td>Overall health</td><td>Solid bones, but dead links and open back doors are costing you calls</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What's holding the site back</h2>
+      <table class="findings">
+        <thead><tr><th>Area</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Buttons and links that go nowhere</td>
+            <td>A customer who taps your phone number, your email, or your address on the site gets nothing, and someone with a burst pipe does not tap twice, they call the next name. Twenty links across the site currently do nothing when clicked, and eleven of your main buttons send people off to places like Facebook instead of to your own pages. Six pages are also missing the main headline that tells Google what they are about, and two pages share the same name in Google&#39;s eyes.</td>
+          </tr>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Old pages still open to the public</td>
+            <td>Google can list your old admin login page and a leftover first-draft page under your business name, right next to the real site, which looks careless to anyone who lands on them. One of your pages also fails outright with a server error when it loads. These doors should be shut so the only thing anyone finds is the site you actually want them to see.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Which homepage Google trusts</td>
+            <td>Google has to guess which version of your homepage is the official one, so the page you care about most can end up competing against copies of itself. The good news is you already hand Google a proper list of your pages, 22 of them, so this is a small and quick fix.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Your map and location</td>
+            <td>There is no map of your location anywhere on the site, and for a local trade that map is one of the standard signals Google uses to decide who shows up when someone searches in their neighbourhood. Adding one is a small job with a real payoff for local searches.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Site security</td>
+            <td>Your site is properly locked, the padlock both customers and Google look for, and everything on it loads securely. Nothing to fix here.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>How you look in search and when shared</td>
+            <td>Your homepage carries the right name and a well-sized description into Google, and links to your site preview cleanly when someone shares them in a text or a post. This is set up well.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Trust signals</td>
+            <td>The trust markers customers scan for before they call are in place. Keep them where they are.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Speed</td>
+            <td>Your homepage answered in about a third of a second on our check and the page itself is lean. Visitors are not left waiting on you, which matters most for people searching on a phone.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Homepage content</td>
+            <td>Your homepage carries 800 words of real copy that Google can read, and the behind-the-scenes information that tells Google who you are is already in place. One easy win is still on the table: a short question-and-answer section, the cheapest way to take up more space on the results page.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p class="lede">The phone number on your own website does nothing when a customer taps it, and it is one of twenty links on the site that go nowhere.</p>
+
+      <h2>The fix, in priority order</h2>
+      <table class="plan">
+        <thead><tr><th>When</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td>Week 1</td><td>Repair the twenty dead links so your phone number, email, and address actually work when a customer taps them.</td></tr>
+          <tr><td>Weeks 1-2</td><td>Shut the old login and draft pages and fix the page that fails with an error.</td></tr>
+          <tr><td>Weeks 2-4</td><td>Point your main buttons at your own pages instead of Facebook, tell Google which homepage is the official one, and add the missing page headlines.</td></tr>
+          <tr><td>Month 2+</td><td>Add your map and a question-and-answer section, then keep tightening the site around the searches your customers actually type.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What clean SEO is worth</h2>
+      <p>Plumbing is bought in a hurry. When a pipe bursts, people search on their phone and call the first company that looks open and legitimate, so every dead link between them and your number is a job that goes to someone else. Fixing the links, shutting the old pages, and pointing your buttons at your own pages means the site you already paid for finally does its one job, making the phone ring. The foundation here is strong enough that this is tightening, not rebuilding.</p>
+
+      <h2>The work to be carried out</h2>
+      <table class="work">
+        <thead><tr><th>What we handle</th><th>What we need from you</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><ul><li>Repairing every dead link, starting with your phone, email, and address</li><li>Shutting the old login and draft pages and fixing the page that errors out</li><li>Pointing your main buttons at your own pages instead of Facebook</li><li>Telling Google which version of your homepage is the official one</li><li>Adding your map and a question-and-answer section</li><li>A plain-English note each month on what changed and why</li></ul></td>
+            <td><ul><li>Login access to the WordPress site</li><li>Access to your Google business listing</li><li>The services and neighbourhoods you most want calls for</li><li>A quick confirmation of your correct phone, email, and address</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="close">
+        <h2>Why this matters</h2>
+        <p>A lot here is already right. The site is secure, it loads fast, the homepage has real substance, and it shows up cleanly when searched or shared. What is broken sits at the last step, the links a customer actually clicks to reach you, and a few old doors Google can wander through. That gap is the difference between a site that looks good and a site that gets you calls. Close it, and this becomes a site that turns an emergency search into your phone ringing.</p>
+      </div>
+
+      <div class="cta">
+        Happy to walk you through any of this, no pitch.
+<br>Or reply to <a href="mailto:rohamghiasicw@gmail.com">rohamghiasicw@gmail.com</a>      </div>
+    </div>
+  </div>
+</div>
+
+<footer>RG Marketing | Audit run 29 July 2026 against integrityplumbingyyc.ca | Findings are measured, not estimated.</footer>
+
+</body>
+</html>
