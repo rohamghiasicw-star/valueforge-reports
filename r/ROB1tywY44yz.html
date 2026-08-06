@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SEO Audit | Rely Construction</title>
+<style>
+  :root {
+    --ink:   #14181f;
+    --body:  #2c3441;
+    --muted: #5b6472;
+    --line:  #e3e7ec;
+    --navy:  #1e2a44;
+    --accent:#2563a8;
+    --red:   #d64545;
+    --amber: #e3a008;
+    --green: #2f9e5f;
+    --page:  #eef1f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 30px 16px; background: var(--page); color: var(--body);
+         font: 14.5px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .sheet { max-width: 1140px; margin: 0 auto 24px; background: #fff; border-radius: 8px;
+           padding: 38px 42px;
+           box-shadow: 0 1px 2px rgba(20,24,31,.06), 0 10px 30px rgba(20,24,31,.07); }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+  h1 { font-size: 27px; margin: 0 0 3px; letter-spacing: -.3px; color: var(--ink); }
+  .client { font-size: 18px; font-weight: 700; color: var(--accent); margin: 0; }
+  .sub { font-size: 12px; color: var(--muted); margin: 3px 0 0; }
+  .byline { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+            font-size: 11px; color: var(--muted); letter-spacing: .3px; text-transform: uppercase;
+            margin: 10px 0 26px; }
+
+  .cols { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); gap: 40px; }
+  h2 { font-size: 15.5px; margin: 24px 0 10px; color: var(--ink); letter-spacing: -.1px; }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 11px; }
+  .lede { font-size: 14.5px; color: var(--ink); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 6px; }
+  th { background: var(--navy); color: #fff; text-align: left; font-weight: 600;
+       padding: 8px 11px; font-size: 12px; }
+  td { padding: 8px 11px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #f7f9fb; }
+  .snapshot td:first-child { font-weight: 600; width: 42%; }
+  .plan td:first-child { font-weight: 600; white-space: nowrap; width: 27%; }
+  .work { table-layout: fixed; }
+  .work ul { margin: 0; padding-left: 16px; }
+  .work li { margin-bottom: 4px; }
+
+  .findings td { padding: 11px 11px 11px 0; }
+  .findings td.area { width: 32%; font-weight: 700; padding-left: 18px; position: relative;
+                      color: var(--ink); }
+  .dot { position: absolute; left: 0; top: 16px; width: 8px; height: 8px; border-radius: 50%; }
+  .red .dot { background: var(--red); }
+  .amber .dot { background: var(--amber); }
+  .green .dot { background: var(--green); }
+
+  .thumb { margin: 0 0 18px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+  .thumb img { display: block; width: 100%; max-height: 190px; object-fit: cover;
+               object-position: top; }
+  .thumb figcaption { font-size: 10.5px; color: var(--muted); padding: 6px 9px;
+                      background: #f7f9fb; border-top: 1px solid var(--line); }
+
+  .close { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .cta { margin-top: 22px; background: #f4f7fa; border-left: 3px solid var(--accent);
+         padding: 14px 16px; border-radius: 0 5px 5px 0; font-size: 13.5px; }
+  .cta a { color: var(--accent); font-weight: 600; }
+  footer { max-width: 1140px; margin: 0 auto; padding-bottom: 26px; text-align: center;
+           color: var(--muted); font-size: 11px; }
+
+  @media (max-width: 900px) {
+    body { padding: 12px 8px; }
+    .sheet { padding: 22px 18px; }
+    .cols { grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  /* Two pages of A4. A document, not a deck. */
+  @page { size: A4 portrait; margin: 12mm 12mm; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 9.6pt; line-height: 1.45; }
+    .sheet { box-shadow: none; border-radius: 0; padding: 0; margin: 0; max-width: none; }
+    .cols { gap: 22px; }
+    h1 { font-size: 19pt; } h2 { font-size: 11pt; margin: 15px 0 7px; }
+    table { font-size: 8.8pt; } th, td { padding: 5px 8px; }
+    .thumb img { max-height: 42mm; }
+    tr, .findings tr, .cta, .thumb { break-inside: avoid; }
+    h2 { break-after: avoid; }
+    footer { padding: 8px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="masthead">
+    <h1>SEO Audit</h1>
+    <p class="client">Rely Construction</p>
+    <p class="sub">relyconstruction.ca</p>
+  </div>
+  <div class="byline">
+    <span>Prepared by Roham Ghiasi | SEO and Search Visibility</span>
+    <span>06 August 2026</span>
+  </div>
+
+  <div class="cols">
+    <div>
+
+      <h2>Where the site stands right now</h2>
+      <table class="snapshot">
+        <tbody>
+          <tr><td>Website</td><td>https://relyconstruction.ca</td></tr>
+          <tr><td>Business</td><td>Rely Construction</td></tr>
+          <tr><td>Platform</td><td>WordPress 7.0.2</td></tr>
+          <tr><td>Primary language</td><td>en-US</td></tr>
+          <tr><td>Indexation</td><td>88 URLs in the sitemap, 12 pages crawled, no canonical tag on the homepage</td></tr>
+          <tr><td>Overall SEO health</td><td>Strong content, six fixable leaks</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What's holding the site back</h2>
+      <table class="findings">
+        <thead><tr><th>Area</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Broken and placeholder links</td>
+            <td>20 links on the site point nowhere, set to &#39;#&#39;, and they include your three main homepage service blocks: Commercial Projects, New Home Construction and Renovations. Another 20 main calls to action send clicks off-site, like the Facebook profile link, which leaks link authority away from the pages you want ranking for construction searches. Add 10 of 12 crawled pages with no H1, two duplicated title tags and one broken external link, and Google reads an unfinished site whose pages it can&#39;t tell apart.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Index control</td>
+            <td>The sitemap at /sitemap_index.xml lists 88 URLs, which is good, but the homepage has no canonical tag. Without one, Google decides on its own which version of the URL counts, and any duplicate versions split ranking signal instead of stacking it. One line of code closes the gap.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Error pages and dead URLs</td>
+            <td>The WordPress login page at /wp-login.php is live and returns a 200 to anyone, including crawlers. That means it can end up indexed alongside your real pages, and it advertises exactly where automated bots should aim login attempts. It should be blocked from crawling and locked down.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Title, meta and heading structure</td>
+            <td>The homepage title tag is a good length at 82 characters and the heading structure is right, exactly one H1 with seven H2s underneath. But the meta description runs 211 characters and Google cuts it off mid sentence, so your one line of free ad copy in the search results ends unfinished. Trimming it to a complete sentence lifts click-through at zero cost.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Images and speed</td>
+            <td>The homepage took 8.1 seconds to respond when we crawled it, on 233 KB of HTML. Server response time is a direct ranking and conversion factor, and most mobile visitors give up long before 8 seconds. The images themselves are nearly clean, 48 of 49 carry alt text, so this is a server fix, not an image one.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Google profile alignment</td>
+            <td>There is no Google map embed on the site, a standard local relevance signal that ties your pages to your service area. For a construction company, the local results are where the leads come from. The site already carries LocalBusiness schema, so this is a small addition that completes the picture.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>HTTPS and redirects</td>
+            <td>HTTPS is enforced sitewide and assets load securely. That is the trust baseline Google expects, and it is done.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Internal linking</td>
+            <td>The 10 pages crawled are properly wired: nothing orphaned, the homepage feeds the deeper pages and they link back. Once the placeholder links are replaced with real ones, this structure will pass authority exactly where it should.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Review and trust signals</td>
+            <td>Trust signals are in place on the site. That supports conversion and the credibility Google weighs for local service queries.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Structure and content</td>
+            <td>The homepage carries 1,518 words, right in the healthy 1,500 to 2,500 band, and the site already runs HomeAndConstructionBusiness, Organization, Place and WebSite schema, which tells Google exactly what kind of business this is. Worth adding FAQPage schema for the question coverage itself, not for a rich result, which Google no longer grants. The content foundation is genuinely solid.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p class="lede">The three service blocks on your homepage link to nowhere, so the pages that should be winning construction searches never receive a click or any link authority.</p>
+
+      <h2>The fix, in priority order</h2>
+      <table class="plan">
+        <thead><tr><th>When</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td>Week 1</td><td>Wire the Commercial Projects, New Home Construction and Renovations blocks to real service pages, replace all 20 placeholder links, and repoint the 20 off-site calls to action at your own pages. Stop the authority leak first.</td></tr>
+          <tr><td>Weeks 1-2</td><td>Write H1s for the 10 pages missing them, rewrite the two duplicate title tags, trim the 211 character meta description to a complete sentence, and set a canonical tag on the homepage so Google reads one clear version of the site.</td></tr>
+          <tr><td>Weeks 2-4</td><td>Cut the 8 second server response with caching and hosting fixes, block /wp-login.php from crawlers and harden it, remove the broken Facebook developers link, add the one missing alt text, and embed a Google map to anchor the local signal.</td></tr>
+          <tr><td>Month 2+</td><td>Reconcile the 88 URL sitemap against the pages that deserve indexing, add FAQ content with FAQPage schema, build internal links from new project pages into the service pages, and track indexation and clicks in Search Console.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What clean SEO is worth</h2>
+      <p>When someone in your area needs a builder, they search, compare the top few results and call one or two. Right now your commercial, new home and renovation pages can&#39;t win those searches because your own homepage doesn&#39;t pass them a single click or any authority. Fix the links, the headings and the speed and the 1,518 words of good content you already have starts doing its job. For a construction business, a single project landed from search pays for this work many times over.</p>
+
+      <h2>The work to be carried out</h2>
+      <table class="work">
+        <thead><tr><th>What we handle</th><th>What we need from you</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><ul><li>All link repairs, H1s, title and meta rewrites</li><li>Canonical tag and sitemap cleanup</li><li>Server speed work alongside your host</li><li>Locking down and de-indexing /wp-login.php</li><li>Map embed and local signal alignment</li><li>Search Console monitoring and plain-English reporting</li></ul></td>
+            <td><ul><li>WordPress admin access</li><li>Hosting access for the speed work</li><li>Your priority services and service areas</li><li>Access to your Google Business Profile</li><li>Sign-off on new titles and descriptions</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="close">
+        <h2>Why this matters</h2>
+        <p>There is real strength here. A 1,518 word homepage, proper HomeAndConstructionBusiness schema, enforced HTTPS, trust signals in place and clean internal wiring on the pages we crawled. Most sites we audit have none of that. What is broken is the plumbing: the service blocks link to nowhere, the calls to action leak to Facebook, 10 pages have no H1 and the server takes 8 seconds to answer. Tighten those and this stops being a brochure Google skims past and becomes a site that competes for construction searches in your area.</p>
+      </div>
+
+      <div class="cta">
+        Happy to walk you through any of this, no pitch.
+<br>Or reply to <a href="mailto:rohamghiasicw@gmail.com">rohamghiasicw@gmail.com</a>      </div>
+    </div>
+  </div>
+</div>
+
+<footer>RG Marketing | Audit run 06 August 2026 against relyconstruction.ca | Findings are measured, not estimated.</footer>
+
+</body>
+</html>
