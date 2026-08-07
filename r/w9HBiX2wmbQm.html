@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>SEO Audit | KE Snow</title>
+<style>
+  :root {
+    --ink:   #14181f;
+    --body:  #2c3441;
+    --muted: #5b6472;
+    --line:  #e3e7ec;
+    --navy:  #1e2a44;
+    --accent:#2563a8;
+    --red:   #d64545;
+    --amber: #e3a008;
+    --green: #2f9e5f;
+    --page:  #eef1f5;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 30px 16px; background: var(--page); color: var(--body);
+         font: 14.5px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         -webkit-font-smoothing: antialiased; }
+  .sheet { max-width: 1140px; margin: 0 auto 24px; background: #fff; border-radius: 8px;
+           padding: 38px 42px;
+           box-shadow: 0 1px 2px rgba(20,24,31,.06), 0 10px 30px rgba(20,24,31,.07); }
+
+  .masthead { border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+  h1 { font-size: 27px; margin: 0 0 3px; letter-spacing: -.3px; color: var(--ink); }
+  .client { font-size: 18px; font-weight: 700; color: var(--accent); margin: 0; }
+  .sub { font-size: 12px; color: var(--muted); margin: 3px 0 0; }
+  .byline { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+            font-size: 11px; color: var(--muted); letter-spacing: .3px; text-transform: uppercase;
+            margin: 10px 0 26px; }
+
+  .cols { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); gap: 40px; }
+  h2 { font-size: 15.5px; margin: 24px 0 10px; color: var(--ink); letter-spacing: -.1px; }
+  h2:first-child { margin-top: 0; }
+  p { margin: 0 0 11px; }
+  .lede { font-size: 14.5px; color: var(--ink); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 6px; }
+  th { background: var(--navy); color: #fff; text-align: left; font-weight: 600;
+       padding: 8px 11px; font-size: 12px; }
+  td { padding: 8px 11px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: #f7f9fb; }
+  .snapshot td:first-child { font-weight: 600; width: 42%; }
+  .plan td:first-child { font-weight: 600; white-space: nowrap; width: 27%; }
+  .work { table-layout: fixed; }
+  .work ul { margin: 0; padding-left: 16px; }
+  .work li { margin-bottom: 4px; }
+
+  .findings td { padding: 11px 11px 11px 0; }
+  .findings td.area { width: 32%; font-weight: 700; padding-left: 18px; position: relative;
+                      color: var(--ink); }
+  .dot { position: absolute; left: 0; top: 16px; width: 8px; height: 8px; border-radius: 50%; }
+  .red .dot { background: var(--red); }
+  .amber .dot { background: var(--amber); }
+  .green .dot { background: var(--green); }
+
+  .thumb { margin: 0 0 18px; border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+  .thumb img { display: block; width: 100%; max-height: 190px; object-fit: cover;
+               object-position: top; }
+  .thumb figcaption { font-size: 10.5px; color: var(--muted); padding: 6px 9px;
+                      background: #f7f9fb; border-top: 1px solid var(--line); }
+
+  .close { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .cta { margin-top: 22px; background: #f4f7fa; border-left: 3px solid var(--accent);
+         padding: 14px 16px; border-radius: 0 5px 5px 0; font-size: 13.5px; }
+  .cta a { color: var(--accent); font-weight: 600; }
+  footer { max-width: 1140px; margin: 0 auto; padding-bottom: 26px; text-align: center;
+           color: var(--muted); font-size: 11px; }
+
+  @media (max-width: 900px) {
+    body { padding: 12px 8px; }
+    .sheet { padding: 22px 18px; }
+    .cols { grid-template-columns: 1fr; gap: 26px; }
+  }
+
+  /* Two pages of A4. A document, not a deck. */
+  @page { size: A4 portrait; margin: 12mm 12mm; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 9.6pt; line-height: 1.45; }
+    .sheet { box-shadow: none; border-radius: 0; padding: 0; margin: 0; max-width: none; }
+    .cols { gap: 22px; }
+    h1 { font-size: 19pt; } h2 { font-size: 11pt; margin: 15px 0 7px; }
+    table { font-size: 8.8pt; } th, td { padding: 5px 8px; }
+    .thumb img { max-height: 42mm; }
+    tr, .findings tr, .cta, .thumb { break-inside: avoid; }
+    h2 { break-after: avoid; }
+    footer { padding: 8px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="masthead">
+    <h1>SEO Audit</h1>
+    <p class="client">KE Snow</p>
+    <p class="sub">kesnow.ca</p>
+  </div>
+  <div class="byline">
+    <span>Prepared by Roham Ghiasi | SEO and Search Visibility</span>
+    <span>07 August 2026</span>
+  </div>
+
+  <div class="cols">
+    <div>
+
+      <h2>Where the site stands right now</h2>
+      <table class="snapshot">
+        <tbody>
+          <tr><td>Website</td><td>https://kesnow.ca</td></tr>
+          <tr><td>Business</td><td>KE Snow</td></tr>
+          <tr><td>Platform</td><td>Not detected</td></tr>
+          <tr><td>Primary language</td><td>English</td></tr>
+          <tr><td>Indexation</td><td>No robots.txt, no sitemap, no canonical tags</td></tr>
+          <tr><td>Overall SEO health</td><td>Clean shell, wrong identity, seven fixable leaks</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What's holding the site back</h2>
+      <table class="findings">
+        <thead><tr><th>Area</th><th>Finding</th></tr></thead>
+        <tbody>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>No clear index control</td>
+            <td>The site serves no robots.txt, no XML sitemap at any standard location, and no canonical tag on the homepage. That means Google gets no crawl directives, no map of your 12 pages and no signal about which version of a page is the real one. Indexation of the whole site is being left to chance.</td>
+          </tr>
+          <tr class="red">
+            <td class="area"><span class="dot"></span>Broken and placeholder links</td>
+            <td>13 of your main call to action links send clicks off-site, for example &#34;visit facebook profile&#34; goes to facebook.com/4KESNOW, which leaks link authority to Facebook instead of the pages you want ranking. The service area list naming Barrie, Innisfil, Alcona, Midhurst, Minesing, Thornton and Angus is a dead link pointing nowhere, so the element that should feed local area pages goes nowhere and reads as unfinished to visitors and to Google. One title tag is also duplicated across pages, which makes those pages compete with each other for the same search.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Title, meta and heading structure</td>
+            <td>The homepage title is 46 characters, &#34;Kinetic Electric Services | Barrie Electrician&#34;, and never mentions snow or removal. The title tag is the strongest single relevance signal on a page, so Google is told this is an electrician&#39;s site and ranks it that way. The meta description runs 187 characters and gets cut off mid sentence, and only 5 H2 headings means the page is thin on the subheadings Google reads to work out what you actually cover.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Internal linking</td>
+            <td>Every page links to nearly every other page, a flat structure rather than a hierarchy. Nothing tells Google which pages matter most, and a site that ranks has a shape, homepage, then service pages, then the areas under each. Right now all 12 pages carry equal weight, so none of them carries enough.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Review and trust signals</td>
+            <td>There is no enquiry form on the homepage, so every lead has to phone or email. For snow removal, where people search at night and in bad weather, that means losing everyone who was ready to fill in a form but not ready to call.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Structure and content</td>
+            <td>The homepage carries 550 words, well under the 1500 to 2500 a page built to rank for a service runs, because that is what it takes to answer a buyer&#39;s questions before they call. There is also no schema markup anywhere, so search engines have to infer what the business is instead of being told.</td>
+          </tr>
+          <tr class="amber">
+            <td class="area"><span class="dot"></span>Google profile alignment</td>
+            <td>The site has no LocalBusiness schema, so your name, address and phone are never stated in a machine-readable way, and there is no Google map embed, a standard local relevance signal. The name on your Google profile, KE Snow, does not appear on the site itself. Google matches your profile to your site by exactly these signals, and right now the two do not confirm each other.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>HTTPS and redirects</td>
+            <td>HTTPS is enforced sitewide and all assets load securely. That is a trust and ranking baseline many local sites still get wrong, and yours is clean.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Error pages and dead URLs</td>
+            <td>Dead URLs return a proper 404 and no error pages are exposed. Google is not wasting crawl budget on junk pages, which is exactly what you want.</td>
+          </tr>
+          <tr class="green">
+            <td class="area"><span class="dot"></span>Images and speed</td>
+            <td>The homepage HTML transfers just 31 KB and responded in 777 ms. That is a lean, fast base, so the rebuild work below starts from a page that already loads well.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <p class="lede">Your homepage title still reads &#34;Kinetic Electric Services | Barrie Electrician&#34;, so Google is filing kesnow.ca as an electrician site, not a snow removal company.</p>
+
+      <h2>The fix, in priority order</h2>
+      <table class="plan">
+        <thead><tr><th>When</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td>Week 1</td><td>Rewrite the homepage title around snow removal and Barrie, drop the electrician branding, trim the meta description under the cutoff, and fix the dead service area link so Barrie, Innisfil, Alcona and the rest actually go somewhere. Fix the identity problem first.</td></tr>
+          <tr><td>Weeks 1-2</td><td>Publish a robots.txt, submit a clean XML sitemap to Search Console, set canonical tags sitewide, dedupe the duplicated title tag, and add LocalBusiness schema with your name, address and 705 331 3041 so Google can match the site to your profile. Embed a Google map.</td></tr>
+          <tr><td>Weeks 2-4</td><td>Rebuild the homepage from 550 words to a full service page with an H2 for each question a buyer asks, add an enquiry form above the fold, and reroute the 13 off-site calls to action into your own service pages so link authority stays on kesnow.ca.</td></tr>
+          <tr><td>Month 2+</td><td>Build dedicated area pages for Innisfil, Alcona, Midhurst, Minesing, Thornton and Angus, restructure internal links into a homepage, services, areas hierarchy, and get KE Snow named consistently across the site and profile.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What clean SEO is worth</h2>
+      <p>Snow removal is searched by town and searched urgently, someone in Innisfil types snow removal near me and calls whoever shows up. Right now that search cannot find you, because the strongest signal on your site says electrician and Google has no sitemap, no schema and no area pages to work with. Your site already lists seven towns you serve, and each one is a search you could own with a real page behind it. Fix the identity and the plumbing, and the site starts catching contract enquiries before the season instead of relying on Facebook.</p>
+
+      <h2>The work to be carried out</h2>
+      <table class="work">
+        <thead><tr><th>What we handle</th><th>What we need from you</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><ul><li>Title, meta and heading rewrite around snow removal</li><li>Robots.txt, XML sitemap and canonical tags</li><li>LocalBusiness schema, NAP markup and map embed</li><li>Homepage rebuild and area pages for your seven towns</li><li>Rerouting off-site CTAs and adding an enquiry form</li><li>Internal linking restructure into a real hierarchy</li></ul></td>
+            <td><ul><li>Access to your website hosting or CMS</li><li>Access to your Google Business Profile and Search Console</li><li>Your priority order for the towns you serve</li><li>Your full service list, residential and commercial</li><li>Any photos of your crew and equipment for the new pages</li></ul></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="close">
+        <h2>Why this matters</h2>
+        <p>The bones here are better than most local sites we audit. HTTPS is enforced, dead URLs 404 properly, and the homepage is a lean 31 KB that responds in under a second, so nothing structural is fighting you. The problem is identity and plumbing, the site tells Google it belongs to a Barrie electrician, gives it no sitemap or schema to read, and sends its best clicks to Facebook. None of that is hard to fix, and all of it is holding the same site back. Tightened up, this becomes the site that owns snow removal searches across Barrie and the six towns you already list.</p>
+      </div>
+
+      <div class="cta">
+        Happy to walk you through any of this, no pitch.
+<br>Or reply to <a href="mailto:rohamghiasicw@gmail.com">rohamghiasicw@gmail.com</a>      </div>
+    </div>
+  </div>
+</div>
+
+<footer>RG Marketing | Audit run 07 August 2026 against kesnow.ca | Findings are measured, not estimated.</footer>
+
+</body>
+</html>
